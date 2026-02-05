@@ -87,3 +87,51 @@ button:focus-visible {
   height: 4px;
   background-color: #0d6efd;
 }
+
+.banner {
+  width: 100%;
+}
+
+.banner img {
+  width: 100vw;
+  height: 330px;
+  object-fit: cover;
+  display: block;
+}
+
+.comics-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 6 colonne */
+  gap: 20px; /* spazio tra le card */
+  padding: 20px;
+  justify-items: center; /* centra le card nelle colonne */
+}
+.comic-card {
+  text-align: center;
+  width: 120px; /* stessa larghezza dell'immagine */
+}
+
+.comic-card img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.comic-card h3 {
+  font-size: 14px; /* più piccolo */
+  white-space: nowrap; /* una riga sola */
+  overflow: hidden; /* nasconde il resto */
+  text-overflow: ellipsis; /* aggiunge "..." se troppo lungo */
+  color: white;
+  margin-top: 5px;
+}
+
+.series {
+  background-color: black;
+  color: white;
+}
+
+.load-more-button {
+  display: flex;
+  justify-content: center;
+}
